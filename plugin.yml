@@ -1,0 +1,10 @@
+main: de.avankziar.diary.main.Main
+version: 1.2.0
+name: Diary
+author: Avankziar
+description: Tagebuch
+
+commands:
+    diary:
+        description: CMD
+        aliases: [tagebuch]

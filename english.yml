@@ -1,0 +1,59 @@
+DY:
+  CMD_Diary:
+    msg01: '&cYou have no rights for it!'
+    msg02: '&cThe MySQL database is not linked. Please set up before to continue!'
+    msg03: '&7Please use &c/diary <entry | page | last | delete | mysql | reload>'
+    msg04: '&cThe player does not exist!'
+    msg05: '&cThe pagenumber is not a number!'
+    info:
+      msg01: '&b=======&6Tagebuch Befehle&b======='
+      msg02: '&6/diary &7=> &eInfobefehl für alle Befehle'
+      msg03: '&6/diary entry <quest-relation> <Eintrag> &7=> &eWrite an entry for the journal. QR is for the name of quests, write >&cnull&e< if there is no quest available.'
+      msg04: '&6/diary seite <seite> &7=> &eShows 5 entries per page with ascending ID entries.'
+      msg05: '&6/diary last &7=> &eShows the last 5 entries'
+      msg06: '&6/diary delete <player> <ID> &7=> &eDeletes the entry of the player with the respective ID'
+      msg07: '&6/diary reload &7=> &eReload the plugin'
+      msg08: '&6/diary mysql <host> <port> <database> <username> <passwort> &7=> &eSets the MySQL connection. / diary reload required later.'
+      msg09: '&6/diary questrelation <questsearch> <seite> &7=> &eZShows all entries that have been entered with the quest-relation <questsearch>.'
+      msg10: '&6/diary givebook <volume> &7=> &eGive a written book to each player. There are 1 entries per page. &c<volume> &estarts at 0!'
+    entry:
+      date_format: 'dd-MM-yyyy HH:mm'
+      msg01: '&cYou must post a message with at least 1 character!'
+      msg02: '&7Diaryentry from &e%time% &7>>&6%entry%<<&7 was &acreated&7!'
+      msg03: '&7Diaryentry from &e%time% &7>>&6%entry%&7<< with the questrelation &b%qr% &7was &acreated&7!'
+    page:
+      msg01: '&cYou must specify a number from 0 in ascending order!'
+      msg02: '&cYou do not have an entry in the diary!'
+      msg03: '&7==========&6Diary P.%page%&7=========='
+      msg04: '&6%id% &7from &6%date%&7: [%qr%&7] &e%entry%'
+      msg05: '&6%id% &7from &6%date%&7: [%qr%&7] &e%entry%'
+    last:
+      msg01: '&7Please use &c/diary last'
+      msg02: '&cYou do not have an entry in the diary!'
+      msg03: '&7==========&6Diary Recent entries&7=========='
+      msg04: '&6%id% &7from &6%date%&7: &e%entry%'
+      msg05: '&6%id% &7from &6%date%&7: [%qr%&7] &e%entry%'
+    delete:
+      msg01: '&cYou have to enter an ID!'
+      msg02: '&cEntry with the ID %id% was deleted!'
+      msg03: '&cThis ID does not exist!'
+    mysql:
+      msg01: '&cThe host, the port, the database, the username, the password and yes / no for the ssl must be specified!'
+      msg02: '&c/diary mysql host port database username passwort ssl(yes/no)'
+      msg03: '&7MySQL for the Diary plugin is set up!'
+      msg04: '&cYou have to specify the SSL with yes or no'
+    reload:
+      msg01: '&7Diary was reloaded!'
+    qr:
+      msg01: '&cYou must specify a number from 0 in ascending order!'
+      msg02: '&cYou do not have an entry in the diary!'
+      msg03: '&7==========&6Sorted by Quest P.%page%&7=========='
+      msg04: '&7========&6Tagebuch Questsorted Last page&7========'
+      msg05: '&6%id% &7from &6%date%&7: [%qr%&7] &e%entry%'
+    givebook:
+      msg01: '&cYou must specify a number from 0 in ascending order!'
+      msg02: '&cYou do not have an entry in the diary!'
+      msg03: '&6Diary from &c%player% &6Vol.&f%nr%'
+      msg04: '&6%id% &7from &6%date%&7: &r%entry%'
+      msg05: '&6%id% &7from &6%date%&7: [%qr%&7] &r%entry%'
+      msg06: '&6You have been given your diary vol.&f%nr%&6!'

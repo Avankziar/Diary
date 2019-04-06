@@ -1,0 +1,26 @@
+Vs. 1.2.0:
+- Quest_Relation &Quest_Relation_Raw mysql spalte hinzugefügt
+- /diary qr <quest> <seite> hinzugefügt
+- /diary hinzugefügt
+- /diary givebook <volume> hinzugefügt
+
+Vs. 1.1.0:
+- English Support
+- german.yml und english.yml hinzugefügt.
+
+Vs. 1.0.0:
+- /diary | Kurze Info
+- /diary eintrag <Playername> <Nachricht> | Die Eintragung ins Tagebuch
+- /diary seite <Seitenzahl> | Das Durchblättern durch Tagebuch, man fängt mit 0 an! Zeigt pro Seite 5 Einträge an.
+- /diary last | Zeigt die letzten 5 Nachrichten absteigend an.
+- /diary delete <Playername> <ID> | Löscht den Eintrag
+- /diary reload | Lädt das Plugin neu.
+- /diary mysql <host> <port> <database> <username> <password> <ssl(yes|no)> | Stellt die mysql Verbindung her
+
+Permission:
+- diary.entry | Für die Gruppe Mod oder Admin
+- diary.page | Für die Gruppe Neuling
+- diary.last | Für die Gruppe Neuling
+- diary.delete | Für die Gruppe Mod
+- diary.reload | Für die Gruppe Admin
+- diary.mysql | Für die Gruppe Owner
